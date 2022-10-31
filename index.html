@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <title>ランディング制作・ランディング作成</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ランディング制作,ランディング作成,ランディグページ">
+        <meta name="description" content="EBA株式会社では成約率に繋がるランディングページ制作を行っています。お気軽にご相談ください。">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/sp.css">
+        <link rel="stylesheet" href="./css/animate.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!---------幾何学模様パーティクル背景------------->
+        <script type="text/javascript" src="./js/jquery.particleground.min.js"></script>
+        <script src="./js/demo.js"></script>
+        <!---------TOPに戻るスクロールボタン------------>
+        <script src="./js/scroll.js"></script>
+        <!-------メインに進むスクロールボタン-------->
+        <script>
+            $(function () {
+                $('[data-scroll]').on('click', function () {
+                    var speed = 500,
+                        $self = $(this),
+                        $href = $self.attr('href'),
+                        $margin = $self.attr('data-scroll') ? parseInt($self.attr('data-scroll')) : 0,
+                        $target = $($href);
+                    var pos = ($target[0] && $target !== '#page_top') ? $target.offset().top - $margin : 0;
+                    $('html,body').animate({ scrollTop: pos }, speed, 'swing');
+                    $self.blur();
+                    return false;
+                });// end function.onClick
+            });// end function    
+        </script>
+        <!-------タイトル左右からフェードイン-------->
+        <script src="./js/animation.js"></script>
+        <!-----コンテンツフェードイン------>
+        <script src="./js/jquery.inview.min.js"></script>
+        <script>
+            $(function () {
+                $('#animation1,#animation2,#animation3,#animation4,#animation5,#animation6,#animation7,#animation8,#animation9,#animation10,#animation11,#animation12,#animation13,#animation14').css('opacity', 0);
+                $('#animation1,#animation2,#animation3,#animation4,#animation5,#animation6,#animation7,#animation8,#animation9,#animation10,#animation11,#animation12,#animation13,#animation14').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                    if (isInView) {
+                        $(this).stop().animate({ opacity: 1 }, 600);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header class="header-box">
+            <div class="header-top">
+                <div class="header-eba-logo">
+                    <img src="./images/eba-logo.png" alt="EBAロゴ">
+                </div>
+                <div class="phone-box">
+                    <h3>03-5778-4829</h3>
+                    <p>受付時間&emsp;10&#58;00～19&#58;00&nbsp;&#40;土日祝除く&#41;</p>
+                </div>
+            </div>
+            <div class="header-wrap">
+                <div class="header-title">
+                    <div class="header-title01">
+                        <svg version="1.1" class="path" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1166.667px" height="104.934px" viewBox="0 0 1166.667 104.934" enable-background="new 0 0 1166.667 104.934" xml:space="preserve">
+                            <g>
+                                <path d="M62.612,101.292c12.79,0,22.568-3.908,29.335-11.726c6.768-7.816,10.151-19.649,10.151-35.497h2.067V103.2
+                        H0.18v-1.59c4.663,0,8.638-0.159,11.925-0.477c3.284-0.318,5.538-0.718,6.757-1.198c1.218-0.477,2.013-1.063,2.385-1.754
+                        c0.37-0.69,0.557-2.526,0.557-5.503V11.007c0-3.081-0.214-4.996-0.636-5.741c-0.214-0.425-0.929-0.85-2.146-1.274
+                        c-1.22-0.425-3.605-0.85-7.155-1.277C8.314,2.29,4.418,2.076,0.18,2.076V0.645h65.349v1.431c-5.938,0-10.573,0.162-13.912,0.479
+                        c-3.339,0.318-5.699,0.743-7.076,1.274c-1.379,0.532-2.174,1.011-2.385,1.436c-0.531,0.959-0.795,2.872-0.795,5.744v81.51
+                         c0,3.085,0.211,5.051,0.634,5.9c0.211,0.427,0.845,0.852,1.903,1.277C47.493,100.761,53.73,101.292,62.612,101.292z" />
+                                <path d="M165.932,76.2h-23.125l-3.695,10.609c-0.955,2.653-1.431,4.944-1.431,6.872c0,2.974,1.119,5.104,3.36,6.39
+                        c2.239,1.286,5.4,1.929,9.48,1.929v1.2h-30.48V102c5.52,0,9.799-2.083,12.84-6.249c1.68-2.323,3.84-7.131,6.48-14.423l20.28-56.488
+                        h2.4l25.92,70.429c1.2,3.287,2.4,5.231,3.6,5.831s4.8,0.9,10.8,0.9v1.2h-44.28V102c6,0,10.119-0.219,12.36-0.662
+                        c2.239-0.442,3.36-1.346,3.36-2.713l-0.24-1.206L165.932,76.2z M165.335,74.88l-10.967-30.553L143.403,74.88H165.335z" />
+                                <path d="M280.721,79.435V46.001c0-7.294-1.241-12.306-3.72-15.032c-2.481-2.727-6.96-4.089-13.44-4.089V25.8h34.08
+                        v1.08c-5.681,0-9.641,1.363-11.88,4.087c-2.241,2.724-3.36,7.732-3.36,15.022v57.69h-2.88l-47.648-63.36l-1.314-1.56
+                        c-0.24,0-0.358,0.722-0.358,2.164v39.195c0,8.816,1.192,14.668,3.582,17.554c2.389,2.885,6.847,4.327,13.376,4.327v1.2h-34.958V102
+                        c6.24,0,10.519-1.282,12.84-3.851c2.319-2.569,3.48-7.624,3.48-15.169V42.049c0-4.494-1.2-8.025-3.6-10.594
+                        c-2.88-3.049-7.122-4.575-12.72-4.575V25.8h24.84l41.413,54c1.033,1.361,1.668,2.04,1.909,2.04
+                        C280.601,81.84,280.721,81.04,280.721,79.435z" />
+                                <path d="M352.48,103.2H305.8V102c3.6,0,6.679-0.12,9.24-0.36c2.559-0.24,4.32-0.542,5.28-0.904
+                            c0.96-0.36,1.519-0.701,1.68-1.023c0.318-0.561,0.48-2.046,0.48-4.453V33.621c0-2.246-0.162-3.69-0.48-4.333
+                            c-0.162-0.32-0.681-0.641-1.56-0.964c-2.562-0.961-7.44-1.443-14.64-1.443V25.8h46.8c9.04,0,17.2,3.32,24.48,9.96
+                            c8.4,7.601,12.6,17.321,12.6,29.16c0,11.681-3.72,21.081-11.16,28.2C371.479,99.84,362.8,103.2,352.48,103.2z M352.528,102
+                            c7.624,0,13.184-3.09,16.675-9.27c3.491-6.18,5.237-15.448,5.237-27.808c0-11.717-1.767-20.867-5.297-27.448
+                            c-3.772-7.062-9.312-10.594-16.615-10.594c-3.853,0-6.802,0.062-8.848,0.182c-2.048,0.12-3.492,0.341-4.335,0.662
+                            c-0.844,0.32-1.404,0.782-1.686,1.384c-0.281,0.602-0.42,2.105-0.42,4.513V95.26c0,2.327,0.139,3.851,0.42,4.573
+                            c0.281,0.724,0.823,1.245,1.626,1.566c0.802,0.322,2.529,0.502,5.177,0.542C347.11,101.981,349.798,102,352.528,102z" />
+                                <path d="M433.118,33.381V95.26c0,2.327,0.159,3.812,0.48,4.453c0.159,0.322,0.64,0.643,1.44,0.963
+                            c2.319,0.883,7.08,1.324,14.28,1.324v1.2h-47.28V102c3.439,0,6.42-0.12,8.94-0.36c2.52-0.24,4.24-0.542,5.16-0.904
+                            c0.919-0.36,1.519-0.802,1.8-1.324c0.28-0.521,0.42-1.907,0.42-4.153V33.381c0-2.246-0.162-3.651-0.48-4.213
+                            c-0.162-0.32-0.681-0.641-1.56-0.963c-2.321-0.881-7.08-1.324-14.28-1.324V25.8h47.4v1.08c-3.44,0-6.42,0.122-8.94,0.362
+                            c-2.52,0.24-4.301,0.561-5.34,0.962l-1.2,0.482C433.397,29.167,433.118,30.733,433.118,33.381z" />
+                                <path d="M529.958,79.435V46.001c0-7.294-1.241-12.306-3.72-15.032c-2.481-2.727-6.96-4.089-13.44-4.089V25.8h34.08
+                            v1.08c-5.681,0-9.641,1.363-11.88,4.087c-2.241,2.724-3.36,7.732-3.36,15.022v57.69h-2.88L481.11,40.32l-1.314-1.56
+                            c-0.24,0-0.358,0.722-0.358,2.164v39.195c0,8.816,1.192,14.668,3.582,17.554c2.389,2.885,6.847,4.327,13.376,4.327v1.2h-34.958V102
+                            c6.24,0,10.519-1.282,12.84-3.851c2.319-2.569,3.48-7.624,3.48-15.169V42.049c0-4.494-1.2-8.025-3.6-10.594
+                            c-2.88-3.049-7.122-4.575-12.72-4.575V25.8h24.84l41.413,54c1.033,1.361,1.668,2.04,1.909,2.04
+                            C529.837,81.84,529.958,81.04,529.958,79.435z" />
+                                <path d="M620.437,103.2h-0.96c0-3.129-0.518-5.477-1.551-7.042c-1.033-1.564-2.334-2.348-3.903-2.348
+                            c-2.719,0-4.997,0.803-6.834,2.408c-0.879,0.802-1.718,1.605-2.517,2.406c-3.037,2.329-5.537,3.853-7.494,4.575
+                            c-1.958,0.72-4.695,1.082-8.212,1.082c-9.032,0-16.624-2.839-22.778-8.52c-7.434-6.799-11.15-16.639-11.15-29.52
+                            c0-12.48,4.074-22.8,12.225-30.96c6.951-6.96,14.102-10.44,21.454-10.44c4.954,0,8.948,0.72,11.985,2.16
+                            c3.834,1.841,7.629,5.321,11.385,10.44l6.791-12.6v33.84h-1.08c-1.68-10.601-5.081-18.81-10.2-24.63
+                            c-4.8-5.419-10.44-8.13-16.92-8.13c-6.162,0-11.021,3.396-14.58,10.185c-3.561,6.79-5.34,16.375-5.34,28.755
+                            c0,12.3,1.648,21.765,4.946,28.395c3.298,6.63,7.847,9.945,13.648,9.945c5.404,0,9.615-1.444,12.636-4.333
+                            c3.019-2.89,4.53-7.103,4.53-12.64V71.661c0-2.166-0.12-3.529-0.36-4.091c-0.24-0.563-0.761-1.003-1.56-1.325
+                            c-0.801-0.321-2.421-0.602-4.86-0.842c-2.441-0.24-4.542-0.362-6.3-0.362v-1.08h41.4v1.08c-1.76,0-3.96,0.162-6.6,0.482
+                            c-2.64,0.323-4.421,0.563-5.34,0.722c-0.92,0.161-1.5,0.44-1.74,0.842c-0.48,0.802-0.72,2.329-0.72,4.575V103.2z" />
+                                <path d="M728.195,56.48v36.128c0,3.105,0.212,5.087,0.64,5.942c0.212,0.43,0.96,0.885,2.24,1.365
+                            c1.28,0.482,3.785,0.885,7.52,1.205c3.732,0.32,8.853,0.48,15.36,0.48v1.6h-69.12v-1.6c5.44,0,9.945-0.16,13.52-0.48
+                            c3.572-0.32,6-0.723,7.28-1.205c1.28-0.48,2.025-0.935,2.24-1.365c0.425-0.855,0.64-2.835,0.64-5.938V10.108
+                            c0-2.888-0.215-4.76-0.64-5.618c-0.215-0.428-0.855-0.855-1.92-1.285c-3.307-1.175-10.347-1.765-21.12-1.765V0h62.08
+                            c12.693,0,22.72,2.935,30.08,8.8c6.933,5.547,10.4,12.8,10.4,21.76c0,6.08-2.667,11.627-8,16.64
+                            c-6.615,6.188-15.575,9.28-26.88,9.28H728.195z M728.195,55.04h16.225c8.89,0,15.103-2.3,18.637-6.9
+                            c2.998-3.958,4.498-10.27,4.498-18.938c0-9.092-1.982-15.993-5.945-20.7c-3.962-4.708-10.067-7.063-18.313-7.063h-7.712
+                            c-2.25,0-3.91,0.162-4.98,0.482c-1.073,0.32-1.743,0.99-2.01,2.005c-0.268,1.018-0.4,3.078-0.4,6.177V55.04z" />
+                                <path d="M846.205,76.2H823.08l-3.695,10.609c-0.955,2.653-1.431,4.944-1.431,6.872c0,2.974,1.119,5.104,3.36,6.39
+                            c2.239,1.286,5.4,1.929,9.48,1.929v1.2h-30.48V102c5.52,0,9.799-2.083,12.84-6.249c1.68-2.323,3.84-7.131,6.48-14.423l20.28-56.488
+                            h2.4l25.92,70.429c1.2,3.287,2.4,5.231,3.6,5.831s4.8,0.9,10.8,0.9v1.2h-44.28V102c6,0,10.119-0.219,12.36-0.662
+                            c2.239-0.442,3.36-1.346,3.36-2.713l-0.24-1.206L846.205,76.2z M845.608,74.88l-10.967-30.553L823.676,74.88H845.608z" />
+                                <path d="M958.474,103.2h-0.961c0-3.129-0.518-5.477-1.551-7.042c-1.033-1.564-2.334-2.348-3.904-2.348
+                            c-2.719,0-4.996,0.803-6.834,2.408c-0.879,0.802-1.717,1.605-2.516,2.406c-3.037,2.329-5.537,3.853-7.494,4.575
+                            c-1.957,0.72-4.695,1.082-8.213,1.082c-9.031,0-16.623-2.839-22.778-8.52c-7.434-6.799-11.15-16.639-11.15-29.52
+                            c0-12.48,4.074-22.8,12.225-30.96c6.951-6.96,14.102-10.44,21.453-10.44c4.955,0,8.947,0.72,11.986,2.16
+                            c3.834,1.841,7.629,5.321,11.385,10.44l6.791-12.6v33.84h-1.08c-1.68-10.601-5.082-18.81-10.201-24.63
+                            c-4.799-5.419-10.439-8.13-16.92-8.13c-6.16,0-11.02,3.396-14.58,10.185c-3.561,6.79-5.34,16.375-5.34,28.755
+                            c0,12.3,1.648,21.765,4.947,28.395c3.299,6.63,7.846,9.945,13.648,9.945c5.402,0,9.615-1.444,12.635-4.333
+                            c3.02-2.89,4.531-7.103,4.531-12.64V71.661c0-2.166-0.121-3.529-0.361-4.091s-0.762-1.003-1.561-1.325
+                            c-0.799-0.321-2.42-0.602-4.859-0.842c-2.441-0.24-4.541-0.362-6.299-0.362v-1.08h41.398v1.08c-1.76,0-3.959,0.162-6.6,0.482
+                            c-2.641,0.323-4.422,0.563-5.34,0.722c-0.92,0.161-1.5,0.44-1.74,0.842c-0.48,0.802-0.719,2.329-0.719,4.575V103.2z" />
+                                <path d="M1013.914,63v32.14c0,2.248,0.118,3.652,0.357,4.213c0.24,0.563,0.998,1.063,2.274,1.506
+                            c1.277,0.442,2.753,0.703,4.429,0.782c1.677,0.081,4.667,0.12,8.976,0.12c9.096,0,15.978-2.709,20.646-8.128
+                            c4.668-5.418,7.601-14.109,8.797-26.072h1.561v35.64h-78V102c7.119,0,11.838-0.44,14.159-1.324c0.799-0.32,1.339-0.742,1.62-1.264
+                            c0.279-0.521,0.42-1.907,0.42-4.153V33.621c0-2.325-0.161-3.771-0.479-4.333c-0.161-0.32-0.681-0.641-1.561-0.962
+                            c-0.881-0.32-2.681-0.641-5.399-0.963c-2.721-0.321-5.641-0.482-8.76-0.482V25.8h74.04v30h-1.561c0-6.186-1.556-12.09-4.667-17.713
+                            c-4.147-7.47-10.011-11.207-17.589-11.207c-3.032,0-6.083,0.021-9.154,0.06c-3.071,0.041-5.803,0.423-8.195,1.147
+                            c-0.718,0.322-1.217,0.746-1.496,1.269c-0.279,0.525-0.418,1.954-0.418,4.29V61.8c8.272,0,13.404-0.84,15.396-2.52
+                            c3.022-2.56,5.13-9.439,6.324-20.64h1.439v47.28h-1.439c-1.194-10.959-3.263-17.719-6.206-20.28
+                             C1027.357,63.881,1022.186,63,1013.914,63z" />
+                            </g>
+                            <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="0" y1="103.934" x2="1166.667" y2="103.934" />
+                        </svg>
+                    </div>
+                    <div class="header-title02">
+                        <img src="./images/second-title.png" alt="成約率の秘訣は">
+                    </div>
+                </div>
+                <svg class="top-scrollbtn">
+                    <a href="#main-box" data-scroll>
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </a>
+                </svg>
+                <div class="second-title">
+                    <div class="second-title01">
+                        <img src="./images/top-text01.png" alt="繋がる" class="animated pulse">
+                    </div>
+                    <div class="second-title02">
+                        <img src="./images/top-text02.png" alt="伝える" class="animated pulse">
+                    </div>
+                    <div class="second-title03">
+                        <img src="./images/top-text03.png" alt="魅せる" class="animated pulse">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main-box">
+            <div class="contents01">
+                <div id="particles">
+                    <div class="box01-img01" id="animation1">
+                        <img src="./images/text01_04.png" alt="初期費用0円最短納品5日">
+                    </div>
+                    <div class="box01-text01">
+                        <h3>なぜランディングページは多いの&#8230;&#63;</h3>
+                    </div>
+                    <div class="box01-img02" id="animation2">
+                        <img src="./images/landing.png" alt="LPが多い理由">
+                    </div>
+                    <div class="box01-text02" id="animation3">
+                        <p class="box01-text03">つまり<p>
+                    <p class="box01-text04">魅力的な伝え方だから<br>ユーザーの不安も解消して</p>
+                        <p class="box01-text05">成約率に繋がりやすい</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents02">
+                <div class="contents02-title">
+                    <h1 class="slide-right">Merit</h1>
+                    <p><span class="text-under">EBA流</span>ランディングページのメリット</p>
+                </div>
+                <div id="trigger01"></div>
+                <div class="contents02-main">
+                    <div class="merit-box01" id="animation4">
+                        <img src="./images/merit-line.png" class="merit-box01-img" alt="枠1">
+                        <div class="merit01-no1">
+                            <img src="./images/merit-01.png" alt="メリット1">
+                        </div>
+                        <div class="merit01-icon">
+                            <img src="./images/merit-icon01.png" alt="メリット1アイコン">
+                        </div>
+                        <div class="merit-no1-text">
+                            <h4>初期費用0円&nbsp;&#183;&nbsp;月額19&#44;800円</h4>
+                            <p>コストにも着目しました。ホームページよりも成約率が高く、好評いただいてます。</p>
+                        </div>
+                    </div>
+                    <div class="merit-box02" id="animation5">
+                        <img src="./images/merit-line.png" class="merit-box02-img" alt="枠2">
+                        <div class="merit02-no2">
+                            <img src="./images/merit-02.png" alt="メリット2">
+                        </div>
+                        <div class="merit02-icon">
+                            <img src="./images/merit-icon02.png" alt="メリット2アイコン">
+                        </div>
+                        <div class="merit-no2-text">
+                            <h4>5営業日以内で納品が可能</h4>
+                            <p class="no2-text01">2～3営業日にデザイン案をお見せし、4～5営業日に修正～納品いたします。</p>
+                            <p class="no2-text02">※デザインによって変更する場合もございます。</p>
+                        </div>
+                    </div>
+                    <div class="merit-box03" id="animation6">
+                        <img src="./images/merit-line.png" class="merit-box03-img" alt="枠3">
+                        <div class="merit03-no3">
+                            <img src="./images/merit-03.png" alt="メリット3">
+                        </div>
+                        <div class="merit03-icon">
+                            <img src="./images/merit-icon03.png" alt="メリット3アイコン">
+                        </div>
+                        <div class="merit-no3-text">
+                            <h4>SEO対策&#40;内部&#41;を強化</h4>
+                            <p>対策は当社の非常に強みです。集客UPに繋がるようページ検索上位の表示をお手伝いします。</p>
+                        </div>
+                    </div>
+                    <div class="merit-box04" id="animation7">
+                        <img src="./images/merit-line.png" class="merit-box04-img" alt="枠4">
+                        <div class="merit04-no4">
+                            <img src="./images/merit-04.png" alt="メリット4">
+                        </div>
+                        <div class="merit04-icon">
+                            <img src="./images/merit-icon04.png" alt="メリット4アイコン">
+                        </div>
+                        <div class="merit-no4-text">
+                            <h4>毎月10時間以内で済む作業<br>ならば、ページ更新&nbsp;&#183;&nbsp;修正無料</h4>
+                            <p>お客様の手を煩わすことはございません。当社スタッフが対応致します。</p>
+                        </div>
+                    </div>
+                    <div class="merit-box05" id="animation8">
+                        <img src="./images/merit-line.png" class="merit-box05-img" alt="枠5">
+                        <div class="merit05-no5">
+                            <img src="./images/merit-05.png" alt="メリット5">
+                        </div>
+                        <div class="merit05-icon">
+                            <img src="./images/merit-icon05.png" alt="メリット5アイコン">
+                        </div>
+                        <div class="merit-no5-text">
+                            <h4>経験豊富なスタッフ</h4>
+                            <p>マーケティング行うことで得た知識や経験を活かし、お客様のサービスが際立つページをお作りします。</p>
+                        </div>
+                    </div>
+                    <div class="merit-box06" id="animation9">
+                        <img src="./images/merit-line.png" class="merit-box06-img" alt="枠6">
+                        <div class="merit06-no6">
+                            <img src="./images/merit-06.png" alt="メリット6">
+                        </div>
+                        <div class="merit06-icon">
+                            <img src="./images/merit-icon06.png" alt="メリット6アイコン">
+                        </div>
+                        <div class="merit-no6-text">
+                            <h4>懸切丁寧な対応</h4>
+                            <p>当社のモットーは&#12300;お客様を幸せにする&#12301;こと。おひとりずつ丁寧な対応を心がけます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="app">
+                <h2><span>お見積もりフォーム</span></h2>
+                <form>
+                    <div class="form-title">ご希望のサービス</div>
+                    <div class="form-contents">
+                        <div class="form-check">
+                            <label for="opt1">LP：1Pにつき<span>+{{ taxedOpt1| number_format }}円(税込)</span></label><br>
+                            <input class="form-control01" type="number" v-model="opt1_use" v-model.number="opt1_num" id="opt1" value="0" min="0" max="30"> 枚
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="opt2" v-model="opt2_use">
+                            <label class="form-check" for="opt2"> SEO対策 <span>+{{ taxedOpt2| number_format }}円(税込)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="opt3" v-model="opt3_use">
+                            <label class="form-check" for="opt3"> レスポンシブ <span>+{{ taxedOpt3| number_format }}円(税込)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="opt4" v-model="opt4_use">
+                            <label class="form-check" for="opt4"> ECサイト作成 <span>+{{ taxedOpt4| number_format }}円(税込)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="opt5" v-model="opt5_use">
+                            <label class="form-check" for="opt5"> ページ更新依頼 <span>+{{ taxedOpt5| number_format }}円(税込)</span></label>
+                        </div>
+                        <div class="total-group">
+                            <label> 合計(税込)</label>
+                            <input type="text" class="form-control02" id="sum_total" v-bind:value="taxedTotalPrice | number_format" readonly="">
+                                <label class="input-group-text">円</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contents03">
+                <div class="contents03-title">
+                    <h1 class="slide-left">LPO対策</h1>
+                </div>
+                <div id="trigger02"></div>
+                <div class="contents03-main" id="animation14">
+                    <div class="contents03-box01">
+                        <img src="./images/midashi_06.png" alt="LPO対策">
+                    </div>
+                    <div class="contents03-box02">
+                        <img src="./images/lpo-con01.png" alt="限定時期">
+                    </div>
+                    <div class="contents03-box03">
+                        <img src="./images/lpo-con02.png" alt="値引き">
+                    </div>
+                    <div class="contents03-box04">
+                        <img src="./images/lpo-con03.png" alt="お客様の声">
+                    </div>
+                    <div class="contents03-box05">
+                        <img src="./images/lpo-con04.png" alt="手書きフォント">
+                    </div>
+                    <div class="contents03-box06">
+                        <img src="./images/lpo-con05.png" alt="ファーストビュー">
+                    </div>
+                    <div class="contents03-box07">
+                        <img src="./images/lpo-con06.png" alt="数字">
+                    </div>
+                </div>
+            </div>
+            <div class="contents04">
+                <div class="contents04-wrap">
+                    <div class="contents04-text">
+                        <p>内部も外部もしっかりSEO対策<br>お客様の為、しっかり価格も抑えました。</p>
+                    </div>
+                    <div class="contents04-img">
+                        <div class="price-list01" id="animation10">
+                            <img src="./images/price-1p.png" alt="1P制作金額">
+                        </div>
+                        <div class="price-list02" id="animation11">
+                            <img src="./images/proce-10p.png" alt="10P制作金額">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents05">
+                <div class="contents05-title">
+                    <h3 class="slide-left02">ご注文から納品まで</h3>
+                </div>
+                <div id="trigger03"></div>
+                <div class="contents05-img" id="animation12">
+                    <img src="./images/nouhin-img.png" alt="ご注文から納品まで">
+                </div>
+            </div>
+            <div class="contents06">
+                <div class="contents06-wrap" id="animation13">
+                    <div class="contents06-title">
+                        <h2><span>Contact</span></h2>
+                        <p>まずはお気軽にお問い合わせください。</p>
+                    </div>
+                    <div class="contents06-btn">
+                        <a class="otoiawase-btn" href="http://ebacorp.jp/form/"><img src="./images/toiwase-btn02.png" alt="お問い合わせボタンロゴ"><p>お問い合わせはこちら</p></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-box">
+                <div class="footer-ebalogo">
+                    <img src="./images/eba-logo.png" alt="EBAロゴ">
+                </div> <small>Copyrights&#169;2016&nbsp;EBA&#44;Inc&#46;All&nbsp;Rights&nbsp;Reserved&#46;</small>
+            </div>
+        </footer>
+        <div id="pagetop">
+            <a href="#"><img src="./images/top-btn.png" alt="トップに戻る"></a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
